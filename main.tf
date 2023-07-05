@@ -4,6 +4,6 @@ provider "aws" {
     secret_key = "EPi0R7SQIpIt4tywS2TNs1xbVxmjdw60+U+Pcjum"
 }
 
-module "s3_bucket" {
-    source = ".//module-1"
+resource "aws_s3_bucket" "bucket" {
+    bucket = "poojabuc009"  
 }
